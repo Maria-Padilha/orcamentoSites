@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+    --color-background: #d3d3d3;
+    --color-secundaria: #bec3c9;
+
+    --color-terciaria: #232B55;
+    --color-quaternaria: #132A42;
+}
+
+.color-background {
+    background-color: var(--color-background);
+}
+
+.color-secundaria {
+    background-color: var(--color-secundaria);
+}
+
+.gradiente {
+    background: linear-gradient(90deg, var(--color-terciaria) 0%, var(--color-quaternaria) 100%);
+}
