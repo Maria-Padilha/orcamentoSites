@@ -30,10 +30,9 @@
 
       <v-container class="relative z-10 px-6 py-5 mt-10">
         <h2
-            class="text-5xl md:text-6xl font-black tracking-tight leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-rose-700 via-rose-500 to-orange-500 drop-shadow-[0_2px_10px_rgba(244,63,94,0.3)]"
+            class="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-rose-700 via-rose-500 to-orange-500 drop-shadow-[0_2px_10px_rgba(244,63,94,0.3)]"
         >
-          Desenvolvimento Web <br/>
-          Responsivo
+          Desenvolvimento Web <br/> Responsivo
         </h2>
 
         <p
@@ -79,7 +78,7 @@
             <img
                 :src="require('@/assets/img/site.png')"
                 alt="Equipe tecnológica" cover
-                class="rounded-xl shadow-2xl border border-rose-100"
+                class="rounded-lg shadow-2xl border border-rose-100"
             />
           </div>
 
@@ -280,7 +279,7 @@ const sobreItens = [
     icone: 'mdi-cog-outline',
     titulo: 'Tecnologia Atual',
     descricao: 'Stacks modernas, seguras e de alta performance.',
-    cor: '#9F1239', // vinho profundo (rose-800)
+    cor: '#d73760', // vinho profundo (rose-800)
   },
   {
     icone: 'mdi-cellphone-link',
@@ -351,7 +350,7 @@ const planos = [
 ]
 
 const scrollToSection = id => document.getElementById(id)?.scrollIntoView({behavior: 'smooth'})
-const contratar = plan => window.open(`https://wa.me/5565984391860?text=${encodeURIComponent(`Olá, vim pelo site! Tenho interesse no plano *${plan.nome}*. Poderia me passar mais informações?`)}`, '_blank')
+const contratar = plan => window.open(`https://wa.me/5565984391860?text=${encodeURIComponent(`Olá, vim pelo site! Tenho interesse no *${plan.nome}*. Poderia me passar mais informações?`)}`, '_blank')
 const abrirWhatsApp = () => window.open('https://wa.me/5565984391860', '_blank')
 const mailto = () => (window.location.href = 'mailto:padilhabarbosa23@gmail.com')
 </script>
